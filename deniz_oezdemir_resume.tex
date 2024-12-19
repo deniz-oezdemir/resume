@@ -1,0 +1,182 @@
+%%%%%%%%%%%%
+% Basic setup
+\documentclass[11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{setspace}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0in}
+\hyphenchar\font=-1
+\usepackage{geometry}
+\geometry{a4paper, twoside, left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+\setstretch{1}
+\usepackage{booktabs}
+\usepackage{topcapt}
+\usepackage{tabulary}
+\usepackage{hyphenat}
+\usepackage[english, german]{babel}
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%
+% PDF setup
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex]{hyperref}
+\else
+  \usepackage{hyperref}
+\fi
+\hypersetup{
+    colorlinks,
+    urlcolor=black,
+    pdfpagemode=UseNone,
+    pdftitle={Resume},
+    pdfauthor={Deniz Özdemir},
+    pdfsubject={Resume},
+    pdfkeywords={DKB, Deutsche Kreditbank, Capgemini Invent, SAP, Mitsubishi, python, product, C, C++, Python, Go, JavaScript, software development, Unix/Linux, virtualization, web development, Humboldt, Mannheim, finance, information systems, economics, compute, storage, databases, serverless, Scrum Product Owner }
+}
+% Ensure PDF output is Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{center}
+	\Large{\textbf{\sc{Deniz Özdemir}}}\\
+	\small
+	\href{mailto:oezdemir.de@gmail.com}{\underline{oezdemir.de@gmail.com}} \textbar\
+	\href{https://linkedin.com/in/denizoezdemir}{{\underline{linkedin.com/in/denizoezdemir}}} \textbar\
+	\href{https://github.com/deniz-oezdemir}{\underline{github.com/deniz-oezdemir}} \\
+\end{center}
+
+{\small
+\noindent
+I am a motivated software developer, changing careers from product management in consumer investing. With a strong foundation in C/C++, I enjoy learning new technologies and am eager to dive into all aspects of development.\\}
+\\
+%% Technical skills section
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Technical Skills}}\\
+	\hline
+\end{tabular*}
+
+\noindent
+\\
+{\small
+\begin{tabular*}{\textwidth}{@{\extracolsep{1cm}} l l}
+	\textbf{Programming Languages} & C, C++, Go, Python, JavaScript, HTML, CSS, SQL\\
+	\textbf{Development Tools} & Git, Docker, Bash, Vim, VS Code, Jira, Confluence, Figma
+\end{tabular*}
+}
+
+%% Pojects section
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Projects}}\\
+	\hline
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{}
+	\item \href{https://github.com/deniz-oezdemir/Transcendence}{\underline{Pong App}}: Currently building a full-stack Pong game that will feature a microservices architecture, real-time multiplayer functionality, game statistics, and an AI opponent.
+	\item \href{https://github.com/deniz-oezdemir/Webserv}{\underline{Web Server}}: Developed a lightweight HTTP server in C++98, inspired by Nginx, compliant with the HTTP/1.1 standard. Features configuration files, CGI support, request parsing, and response generation, with support for GET, POST, and DELETE requests. Implemented unit test for all critical components.
+	\item \href{https://github.com/deniz-oezdemir/miniRT}{\underline{Ray Tracer}}: Implemented a ray tracer to render 3D images from numerical scenes using test-driven development.
+	\item \href{https://github.com/deniz-oezdemir/Minishell}{\underline{Minishell}}: Built a custom Unix-like shell in C, emulating Bash functionality with support for command execution, built-ins, piping, redirection, and signal handling.
+	\item \href{https://github.com/deniz-oezdemir/Philosophers}{\underline{Philosophers}}: Solved the dining philosophers problem with multithreading in C. Also \href{https://github.com/deniz-oezdemir/philo}{\underline{reimplemented in Go}}.
+\end{list}
+}
+
+%% Experience section
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Experience}}\\
+	\hline
+\end{tabular*}
+
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Deutsche Kreditbank AG} & Berlin, Germany \\
+	\emph{Product Manager, Retail Clients -- Securities and Savings} & \emph{10/2022 - Present} \\
+	\emph{Trainee, Banking Transformation} & \emph{10/2021 - 09/2022}
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{}
+	\item Led cross-functional collaboration by creating detailed user stories, prioritizing development tasks, and facilitating communication between legal, design, engineering, QA, and marketing teams. Drove the development of key features for a new brokerage software, ensuring alignment and timely delivery.
+	\item Simplified complex regulatory frameworks by translating them into clear technical specifications. Partnered with an adjacent team to deliver a self-disclosure product, ensuring full compliance with financial regulations.
+	\item Improved search functionality for a consumer investment portal by coordinating efforts between external providers and in-house development. Enhanced the user experience, leading to increased satisfaction and engagement.
+\end{list}
+}
+
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Capgemini SE} & Munich, Germany \\
+	\emph{Intern, Management Consulting -- Business Data Strategy} & \emph{08/2020 - 10/2020}
+\end{tabular*}
+
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{SAP SE} & Walldorf, Germany \\
+	\emph{Working Student, Customer Success -- Project Management} & \emph{08/2019 - 04/2020}
+\end{tabular*}
+
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Mitsubishi Fuso Truck and Bus Corporation} & Tokyo, Japan \\
+	\emph{Intern, Cost Controlling -- Business Technology Analyst} & \emph{10/2017 - 02/2018}
+\end{tabular*}
+
+%% Education section
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Education}}\\
+	\hline
+\end{tabular*}
+
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{42 Berlin} & Berlin, Germany \\
+	\emph{Software Engineering} & \emph{11/2023 - Present}
+\end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{}
+	\item Built functional applications in a project-based learning environment that emphasizes self-directed problem-solving, peer-to-peer learning, and team collaboration in software development.
+	\item Completed 87\% of the core curriculum, gaining expertise in imperative and object-oriented programming while acquiring practical experience in algorithms, graphics, networking, system administration, and web development.
+\end{list}
+}
+
+\noindent
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{University of Mannheim} & Mannheim, Germany \\
+	\emph{MS, Finance and Information Systems}  & \emph{09/2018 - 06/2021}
+\end{tabular*}
+
+
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{Humboldt University of Berlin} & Berlin, Germany \\
+	\emph{BS, Economics} & \emph{10/2013 - 10/2017}
+\end{tabular*}
+
+%% Further competencies section
+\noindent
+\\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
+	\large {\sc {Further Competencies}}\\
+	\hline
+\end{tabular*}
+
+\noindent
+\\
+{\small
+\begin{tabular*}{\textwidth}{@{\extracolsep{1cm}} l l}
+	\textbf{Languages} & English (Full Professional), German (Native), Turkish (Intermediate), Italian (Elementary)\\
+	\textbf{Credentials} & AWS Compute, Storage, Databases, and Serverless (AWS Educate), CSPO (Scrum Alliance)\\
+\end{tabular*}
+}
+
+\end{document}
