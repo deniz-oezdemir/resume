@@ -7,6 +7,7 @@
 \setlength{\tabcolsep}{0in}
 \hyphenchar\font=-1
 \usepackage{geometry}
+% Adjust top and bottom spacing as needed
 \geometry{a4paper, twoside, left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
 \setstretch{1}
 \usepackage{booktabs}
@@ -33,6 +34,7 @@
     pdfsubject={Resume},
     pdfkeywords={DKB, Deutsche Kreditbank, Capgemini Invent, SAP, Mitsubishi, C, C++, Python, Go, JavaScript, HTML, CSS, SQL, software development, Unix/Linux, virtualization, web development, Humboldt, Mannheim, finance, information systems, economics, compute, storage, databases, serverless, Scrum Product Owner}
 }
+
 % Ensure PDF output is Unicode and machine-readable
 \input{glyphtounicode}
 \pdfgentounicode=1
@@ -51,7 +53,10 @@
 
 {\small
 \noindent
-I am a motivated software developer transitioning from a career in product management. With a strong foundation in C/C++, I enjoy learning new technologies and am eager to explore all aspects of software development.\\
+I am a motivated software developer transitioning from a career in product management.
+With a strong foundation in C/C++, I enjoy learning new technologies and
+am eager to create efficient, reliable and scalable software systems.\\
+}
 \\
 %% Technical skills section
 \noindent
@@ -64,8 +69,9 @@ I am a motivated software developer transitioning from a career in product manag
 \\
 {\small
 \begin{tabular*}{\textwidth}{@{\extracolsep{1cm}} l l}
-	\textbf{Programming Languages} & C, C++, Go, Python, JavaScript, HTML, CSS, SQL\\
-	\textbf{Development Tools} & Git, Docker, Bash, Vim, VS Code, Jira, Confluence, Figma
+	\textbf{Programming Languages} & C, C++, Go, Python, JavaScript/TypeScript, SQL (Postgres)\\
+	\textbf{Frameworks / Libraries} & Django, FastAPI, HuggingFace, Bootstrap, WordPress\\
+	\textbf{Development Tools} & Git, Docker, Bash, Vim, VS Code, Jira, Confluence, Figma, DigitalOcean
 \end{tabular*}
 }
 
@@ -78,17 +84,18 @@ I am a motivated software developer transitioning from a career in product manag
 
 \medbreak
 {\small
-	\begin{list}{$\bullet$}{}
-		\item \href{https://github.com/deniz-oezdemir/Transcendence}{\underline{Pong Web App}}: Currently building a full-stack 3D Pong game with a microservices architecture. It will feature real-time multiplayer functionality, an AI opponent, game statistics, and cross-device compatibility.
-		\item \href{https://github.com/deniz-oezdemir/Webserv}{\underline{Web Server}}: Developed an HTTP/1.1 compliant web server in C++98 with configuration management, CGI support, and comprehensive unit testing. Implemented non-blocking I/O with poll.
+	\noindent
+	\begin{list}{$\bullet$}{
+		}
+		\item \href{https://github.com/deniz-oezdemir/Webserv}{\underline{Web Server}}: Developed an HTTP/1.1 compliant web server in C++98 with API endpoints, configuration management, CGI support, and unit testing. Implemented non-blocking I/O with poll for efficient request handling.
+		\item \href{https://github.com/deniz-oezdemir/Transcendence}{\underline{Pong Web App}}: Built a full-stack 3D game with a microservices architecture. Implemented RESTful backend APIs with database integration and containerized deployment with Docker. It features real-time multiplayer functionality, an AI opponent, and cross-device compatibility.
 		\item \href{https://github.com/deniz-oezdemir/miniRT}{\underline{Ray Tracer}}: Implemented a ray tracer to render 3D images with multiple objects using test-driven development.
 		\item \href{https://github.com/deniz-oezdemir/Minishell}{\underline{Minishell}}: Built a custom Unix-like shell in C, emulating Bash functionality with support for command execution, built-ins, piping, redirection, and signal handling.
 		\item \href{https://github.com/deniz-oezdemir/Philosophers}{\underline{Philosophers}}: Simulated the dining philosophers problem with multithreading in C. Also \href{https://github.com/deniz-oezdemir/philo}{\underline{reimplemented in Go}}.
 	\end{list}
 }
-\bigbreak
 
-%% Experience section
+% Experience section
 \noindent
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
 	\large {\sc {Experience}}\\
@@ -105,9 +112,8 @@ I am a motivated software developer transitioning from a career in product manag
 {\small
 \noindent
 \begin{list}{$\bullet$}{}
-	\item Led cross-functional collaboration by creating detailed user stories, prioritizing development tasks, and facilitating communication between legal, design, engineering, QA, and marketing teams. Drove the development of key features for a new brokerage software, ensuring alignment and timely delivery.
-	\item Simplified complex regulatory frameworks by translating them into clear technical specifications. Partnered with an adjacent team to deliver a self-disclosure product, ensuring full compliance with financial regulations.
-	\item Improved search functionality for a consumer investment portal by coordinating efforts between external providers and in-house development. Enhanced the user experience, leading to increased satisfaction and engagement.
+	\item Supported the development of key brokerage software features by crafting detailed requirement specifications
+	and facilitating cross-functional collaboration among legal, design, data, engineering, and marketing teams.
 \end{list}
 }
 
@@ -116,22 +122,39 @@ I am a motivated software developer transitioning from a career in product manag
 	\textbf{Capgemini SE} & Munich, Germany \\
 	\emph{Intern, Management Consulting -- Business Data Strategy} & \emph{08/2020 - 10/2020}
 \end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{}
+	\item Delivered data-driven solutions for clients in the automotive, pharmaceutical and financial industries.
+\end{list}
+}
 
 \noindent
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{SAP SE} & Walldorf, Germany \\
-	\emph{Working Student, Customer Success -- Project Management} & \emph{08/2019 - 04/2020}
+	\emph{Working Student, Customer Engagement Innovation Delivery -- Product Management} & \emph{08/2019 - 04/2020}
 \end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{}
+	\item Streamlined operating processes with Signavio, creating the foundation for a new cloud-native product.
+\end{list}
+}
 
 \noindent
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{Mitsubishi Fuso Truck and Bus Corporation} & Tokyo, Japan \\
 	\emph{Intern, Cost Controlling -- Business Technology Analyst} & \emph{10/2017 - 02/2018}
 \end{tabular*}
-
-%% Education section
+{\small
 \noindent
-\\
+\begin{list}{$\bullet$}{}
+	\item Drove the development of a reporting tool on SAP BW architecture by ensuring stakeholder buy-in.
+\end{list}
+}
+
+%% Education
+\noindent
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
 	\large {\sc {Education}}\\
 	\hline
@@ -141,13 +164,14 @@ I am a motivated software developer transitioning from a career in product manag
 \\
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{42 Berlin} & Berlin, Germany \\
-	\emph{Software Engineering} & \emph{11/2023 - Present}
+	\emph{Software Engineering} & \emph{11/2023 - 02/2025}
 \end{tabular*}
 {\small
 \noindent
-\begin{list}{$\bullet$}{}
-	\item Built functional applications in a project-based learning environment that emphasizes self-directed problem-solving, peer-to-peer learning, and team collaboration in software development.
-	\item Completed 87\% of the core curriculum, gaining expertise in imperative and object-oriented programming while acquiring practical experience in algorithms, graphics, networking, system administration, and web development.
+\begin{list}{$\bullet$}{
+	}
+	\item Gained hands-on experience in algorithms, graphics, networking, system administration, and web development.
+	Completed the course in 15 months while working part-time, 3 months faster than the average full-time student.
 \end{list}
 }
 
@@ -156,17 +180,27 @@ I am a motivated software developer transitioning from a career in product manag
 	\textbf{University of Mannheim} & Mannheim, Germany \\
 	\emph{MS, Finance and Information Systems}  & \emph{09/2018 - 06/2021}
 \end{tabular*}
+{\small
+\noindent
+\begin{list}{$\bullet$}{}
+	\item Relevant Coursework: Human-Computer Interaction, Predictive Analytics
+\end{list}
+}
 
 \noindent
-\\
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
 	\textbf{Humboldt University of Berlin} & Berlin, Germany \\
 	\emph{BS, Economics} & \emph{10/2013 - 10/2017}
 \end{tabular*}
-
-%% Further competencies section
+{\small
 \noindent
-\\
+\begin{list}{$\bullet$}{}
+	\item Relevant Coursework: Business Informatics, Statistical Programming
+\end{list}
+}
+
+%% Further skills section
+\noindent
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}}
 	\large {\sc {Further Competencies}}\\
 	\hline
